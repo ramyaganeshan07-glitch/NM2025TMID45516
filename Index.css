@@ -1,0 +1,96 @@
+/* index.css */
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Theme */
+body.light {
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+/* Dark Theme */
+body.dark {
+  background-color: #222;
+  color: #fff;
+}
+
+/* App container */
+#root {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Recipe Search */
+input[type="text"] {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 60%;
+  max-width: 400px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+input[type="text"]:focus {
+  border-color: #6200ea;
+}
+
+button {
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Recipe list */
+ul {
+  margin-top: 15px;
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  background: rgba(98, 0, 234, 0.1);
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+/* Rating stars */
+span {
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+span:hover {
+  transform: scale(1.2);
+}
